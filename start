@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker image build -t jenkins .
+
+docker container run -d -p $1:8080 jenkins:latest
